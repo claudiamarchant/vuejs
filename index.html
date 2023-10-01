@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><router-link to="path">LinkTitle</router-link></title>
+    <!--se importa vue con cdn-->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>agregar vue a cualquier proyecto</h1>
+        <!--variable vue-->
+        <p>titulo: {{ title }}</p>
+        <p>var: {{ variable }}</p>
+
+    </div>
+    
+    <script src="./index.js"></script>
+    <script>
+        //se ocupa la variable const del js
+        //y se le da el id de donde quiere ser ejecutado
+        const myApp = app.mount("#app")
+    </script>
+</body>
+</html>
